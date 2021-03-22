@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-timer-trigger", "01-time
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-http-trigger", "02-http-trigger\02-http-trigger.csproj", "{02157FCE-9BC8-4C4F-81B7-D2BD3852F2D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-http-trigger-weather-api", "03-http-trigger-weather-api\03-http-trigger-weather-api.csproj", "{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{02157FCE-9BC8-4C4F-81B7-D2BD3852F2D7}.Release|x64.Build.0 = Release|Any CPU
 		{02157FCE-9BC8-4C4F-81B7-D2BD3852F2D7}.Release|x86.ActiveCfg = Release|Any CPU
 		{02157FCE-9BC8-4C4F-81B7-D2BD3852F2D7}.Release|x86.Build.0 = Release|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Debug|x64.Build.0 = Debug|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Debug|x86.Build.0 = Debug|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|x64.ActiveCfg = Release|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|x64.Build.0 = Release|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|x86.ActiveCfg = Release|Any CPU
+		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
