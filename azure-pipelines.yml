@@ -20,3 +20,11 @@ steps:
     command: 'publish'
     publishWebProjects: false
     projects: '**/03-http-trigger-weather-api.csproj'
+
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'meetup-ccdays-03242021-service-connection'
+    appType: 'functionAppLinux'
+    appName: 'meetup-ccdays-03242021'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'DOTNET|3.1'
