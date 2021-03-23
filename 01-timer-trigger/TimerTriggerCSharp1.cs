@@ -3,7 +3,7 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
-namespace Company.Function
+namespace MeetupCCDays03242021.CodeSamples.FunctionApp
 {
     public static class TimerTriggerCSharp1
     {

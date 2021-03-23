@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Company.Function
+namespace MeetupCCDays03242021.CodeSamples.FunctionApp
 {
     public class WeatherRequest
     {

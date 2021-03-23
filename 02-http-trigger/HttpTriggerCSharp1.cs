@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Company.Function
+namespace MeetupCCDays03242021.CodeSamples.FunctionApp
 {
     public static class HttpTriggerCSharp1
     {
