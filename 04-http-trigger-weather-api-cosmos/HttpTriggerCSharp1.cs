@@ -33,21 +33,26 @@ namespace MeetupCCDays03242021.CodeSamples.FunctionApp
     {
         [FunctionName("HttpTriggerCosmosInputCSharp1")]
         public static IActionResult Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "city/{city}")] HttpRequest req,
             [CosmosDB("mydb1", "mycollection1",
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
-                SqlQuery = "select * from c")] // replace later as appropriate
+                SqlQuery = "select * from c where c.city = {city}")] // replace later as appropriate
                 IEnumerable<DailyWeather> dailyWeathers,
+            string city,
             ILogger log)
         {
+            var dailyWeatherReport = new List<DailyWeather>();
+
             foreach (var dailyWeather in dailyWeathers)
             {
-                log.LogInformation($"document: {JsonConvert.SerializeObject(dailyWeather)}");
-                dailyWeather.CelciusHigh = 50.1;
-                dailyWeather.Date = DateTime.Now.AddDays(1);
+                dailyWeatherReport.Add(dailyWeather);
             }
 
-            return new OkResult();
+            return new OkObjectResult(new WeatherResponse
+            {
+                City = city,
+                DailyWeatherReport = dailyWeatherReport,
+            });
         }
     }
 }
