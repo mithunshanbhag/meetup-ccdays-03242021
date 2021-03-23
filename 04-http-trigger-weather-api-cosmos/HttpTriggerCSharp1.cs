@@ -36,7 +36,7 @@ namespace MeetupCCDays03242021.CodeSamples.FunctionApp
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "city/{city}")] HttpRequest req,
             [CosmosDB("mydb1", "mycollection1",
                 ConnectionStringSetting = "AzureWebJobsCosmosDB",
-                SqlQuery = "select * from c where c.city = {city}")] // replace later as appropriate
+                SqlQuery = "select * from c where StringEquals(c.city, {city}, true)")] // replace later as appropriate
                 IEnumerable<DailyWeather> dailyWeathers,
             string city,
             ILogger log)
