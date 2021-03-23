@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-http-trigger", "02-http-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-http-trigger-weather-api", "03-http-trigger-weather-api\03-http-trigger-weather-api.csproj", "{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-http-trigger-weather-api-cosmos", "04-http-trigger-weather-api-cosmos\04-http-trigger-weather-api-cosmos.csproj", "{CE3A9759-6924-43B0-ABAF-8395F142331E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|x64.Build.0 = Release|Any CPU
 		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|x86.ActiveCfg = Release|Any CPU
 		{4E1E93AA-D8DD-4D27-921C-DBD7309E8E23}.Release|x86.Build.0 = Release|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Debug|x64.Build.0 = Debug|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Debug|x86.Build.0 = Debug|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Release|x64.Build.0 = Release|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE3A9759-6924-43B0-ABAF-8395F142331E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
