@@ -42,8 +42,8 @@ namespace MeetupCCDays03242021.CodeSamples.FunctionApp
                 .Select(x => new DailyWeather
                 {
                     Date = DateTime.Now.AddDays(x),
-                    CelciusLow = 30,
-                    CelciusHigh = 35,
+                    CelciusLow = new Random().Next(20,30),
+                    CelciusHigh = new Random().Next(30,40),
                 });
 
             var weatherResponse = new WeatherResponse
